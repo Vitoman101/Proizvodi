@@ -74,9 +74,9 @@
                 <tr>
                     <td></td>
                     <td colspan="2">
-                        <asp:Button Text="Save" ID="btnSave" runat="server"/>
+                        <asp:Button Text="Save" ID="btnSave" runat="server" OnClick="btnSave_Click"/>
                         <asp:Button Text="Delete" ID="btnDelete" runat="server"/>
-                        <asp:Button Text="Clear" ID="btnClear" runat="server"/>
+                        <asp:Button Text="Clear" ID="btnClear" runat="server" OnClick="btnClear_Click"/>
                     </td>
                 </tr>
                 <tr>
@@ -107,7 +107,7 @@
                     <asp:BoundField DataField="cena" HeaderText="cena" />
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <asp:LinkButton Text="Select" ID="lbSelect" CommandArgument='<% Eval("id") %>' runat="server"/>
+                            <asp:LinkButton Text="Select" ID="lbSelect" CommandArgument='<%# Eval("id") %>' runat="server" OnClick="lnkSelect_OnClick"/>
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
