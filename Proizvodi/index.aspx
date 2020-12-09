@@ -74,9 +74,9 @@
                 <tr>
                     <td></td>
                     <td colspan="2">
-                        <asp:Button Text="Save" ID="btnSave" runat="server" OnClick="btnSave_Click"/>
+                        <asp:Button Text="Save" ID="btnSave" runat="server"/>
                         <asp:Button Text="Delete" ID="btnDelete" runat="server"/>
-                        <asp:Button Text="Clear" ID="btnClear" runat="server" OnClick="btnClear_Click"/>
+                        <asp:Button Text="Clear" ID="btnClear" runat="server"/>
                     </td>
                 </tr>
                 <tr>
